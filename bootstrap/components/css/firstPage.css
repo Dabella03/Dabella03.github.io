@@ -1,3 +1,9 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+@font-face {
+  font-family: 'Baskervville';
+  src: url('../fonts/Baskervville-Regular.ttf') format('ttf');
+}
+
 .body{
     margin:0;
     padding:0;
@@ -6,12 +12,12 @@
 }
 
 .wrapper{
-    position:fixed;
+    /* position:fixed;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; */
     background-color: #FEEDDB;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .box div{
@@ -93,7 +99,7 @@
         opacity:0.7; /* Sesuaikan pergerakan horizontal */
       }
       100% {
-        transform: translateY(120vh);
+        transform: translateY(500vh);
       }
 }
 
@@ -139,3 +145,52 @@
     /* font-size: large; */
 }
 
+.btn-custom{
+  background-color: #D39B6C;
+  color: #fff;
+  border: #D39B6C;
+}
+
+.btn-custom:hover{
+  background-color: #AD7143;
+  border: #AD7143;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.main {
+  text-align: center;
+}
+
+.main-section{
+  background-color: #FEEDDB;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(30px + 2vmin); */
+  color: #D39B6C;
+}
+
+.tanggal{
+text-align: center;
+font-family: 'Baskervville', Arial, sans-serif;
+/* font-family: 'Courier New', Courier, monospace; */
+}
+
+.tanggal p,
+.tanggal h1,
+.tanggal h2,
+.tanggal h3,
+.tanggal h4{
+margin:0;
+font-weight: normal;
+}
+
+.tanggal h1{
+font-weight: normal;
+}
+
+.tanggal p{
+font-size:large;
+}

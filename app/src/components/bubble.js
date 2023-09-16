@@ -1,36 +1,24 @@
-// import React, { Component } from 'react';
-// import './bubble.css';
-// import circle from './image/circle1.png';
+// import Main from './components/Main';
+import FirstPage from './firstPage.js';
+import './firstPage.css';
 
-// class Bubble extends Component {
-//   componentDidMount() {
-//     // Mengaktifkan animasi setelah 1 detik
-//     setTimeout(() => {
-//       document.querySelector('.gambar-animasi').classList.add('active');
-//     }, 1000);
-//   }
-
-//   render() {
-//     return (
-//       <div className="container">
-//         <img src={circle} className="gambar-animasi" />
-//       </div>
-//     );
-//   }
-// }
-
-// export default Bubble;
-import React, { Component } from 'react';
-import './bubble.css'; // Buat file CSS untuk latar belakang dan animasi
-
-class Bubble extends Component {
-  render() {
-    return (
-      <div className="background-container">
-        <div className="bubble"></div>
+function Bubble() {
+  return (
+    <body className='body'>
+      <div className='wrapper'>
+        <div className="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <FirstPage></FirstPage>
       </div>
-    );
-  }
-}
+    </body>
+    // <Main></Main>
+    // <FirstPage></FirstPage>
+  )}
 
 export default Bubble;

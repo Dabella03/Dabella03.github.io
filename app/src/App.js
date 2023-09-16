@@ -54,15 +54,37 @@
 
 // export default App;
 
-// import logo from './logo.svg';
-// import './App.css';
-import Main from './components/Main';
-import FirstPage from './components/firstPage';
+// import React from "react";
+// import FirstPage from './components/firstPage';
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Bubble from "./components/bubble";
 
+// function App() {
+//   return (
+//     <div>
+//       <Bubble></Bubble>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+import React from "react";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Router from "./route";
+// import Home from "./components/Home.js";
+// import About from "./components/About.js";
+  
 function App() {
+    
   return (
-    <Main></Main>
-    // <FirstPage></FirstPage>
-  )}
-
+      <BrowserRouter>
+      <Router/>
+      </BrowserRouter>
+      
+  );
+}
+  
 export default App;

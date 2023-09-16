@@ -4,6 +4,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './firstPage.css';
 import NAMA from './image/NAMA.png';
+// import {useNavigate} from 'react-router-dom';
 
 const theme = createTheme({
     palette: {
@@ -16,10 +17,24 @@ const theme = createTheme({
     },
   });
 
-function FirstPage(){
+const FirstPage =()=>{
+    // const navigate=useNavigate();
+    // const handleButtonClick =()=>{
+    //     navigate
+    // }
     return(
         <ThemeProvider theme={theme}>
-        <div className="body">
+            <div className="banner">
+                <img src={NAMA} alt="" className="coverimg" />
+                <div className="content">
+                    
+                    <p>Kepada YTH.</p>
+                    <p>Nama Tamu Undangan</p>
+                </div>
+                <Button variant="contained" startIcon={<MailIcon/>} size="large" color="brown"
+                        className="custom-button">Open Invitation</Button>
+            </div>
+        {/* <div className="body">
             <div className="wrapper">
                 <div className="box">
                     <div></div>
@@ -41,7 +56,7 @@ function FirstPage(){
                 <Button variant="contained" startIcon={<MailIcon/>} size="large" color="brown"
             className="custom-button">Open Invitation</Button>
             </div>
-        </div>
+        </div> */}
     </ThemeProvider>
     )
 }
