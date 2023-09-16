@@ -61,8 +61,8 @@ import FirstPage from './components/firstPage';
 
 function App() {
   return (
-    // <main></main>
-    <FirstPage></FirstPage>
+    <Main></Main>
+    // <FirstPage></FirstPage>
   )}
 
 export default App;
