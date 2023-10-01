@@ -1,0 +1,193 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=DM+Serif+Display:ital@1&family=Parisienne&family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+.color-1{
+ color: #974F0D;
+}
+.color-2{
+    color: #9A3B3B;
+}
+.color-3{
+    color: #BAAD6B;
+}
+
+.color-4{
+    color: #C08261;
+}
+.bg-3{
+    background-color: #C08261;
+}
+/* CSS untuk gambar latar belakang di perangkat desktop */
+@media (min-width: 768px){
+.bg-1{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0) ),url('../image/BgDesktop.png');
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.bg-2{
+        /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url('../image/FPCut.png'); */
+        background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(218,218,218,0.8) 97%),url('../image/FPCut.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }   
+.mobile-image {
+    display: none;
+    }
+
+    .desktop-image {
+    display: block;
+    } 
+}
+
+/* CSS untuk gambar latar belakang di perangkat seluler */
+@media (max-width: 767px) {
+    .bg-1 {
+        background-image: url('../image/FotoPrewed1.png');
+        background-size: cover;
+    background-repeat: no-repeat;
+    }
+.bg-2{
+    /* background: rgba(151, 132, 132, 0.6); */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.7)),url('../image/FotoPrewed2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+.mobile-image {
+display: block;
+}
+
+.desktop-image {
+display: none;
+}    
+}    
+}
+
+
+
+.nama h1{
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: bold;
+}
+
+.song-myung{
+    font-family: 'Song Myung', serif;
+}
+
+/* .wave-container {  
+    height: 60vh;
+    background-color: #fff5ee;
+    position: relative;
+  }
+  
+  .wave-container::before {   
+    content: "";
+    width: 100%;
+    height: 168px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 56vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23c08261'/></svg>");
+  }
+  
+  
+  @media(max-width:850px) {
+    .wave-container::before {    
+      height: 84px
+    }  
+  } */
+
+  .wave-container {  
+    height: 50vh;
+    background-color: #ffffff;
+    background-image: url('../image/wave\ \(6\).svg'),url('../image/wave\ \(7\).svg'),url('../image/wave\ \(4\).svg');
+    /* position: absolute; */
+    bottom: -0.3%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .wave-container2 {  
+    height: 50vh;
+    background-color: #ffffff;
+    background-image:url('../image/wave\ \(8\).svg'),url('../image/wave.svg'),url('../image/wave\ \(3\).svg');
+    position: relative;
+    top:-10%;
+    background-repeat: no-repeat;
+  }
+
+  .wave-container3 {  
+    height: 50vh;
+    background-color: #ffffff;
+    background-image:url('../image/wave.svg'),url('../image/wave\ \(3\).svg'),url('../image/wave\ \(8\).svg');
+    position: relative;
+    top:-10%;
+    background-repeat: no-repeat;
+  }
+
+/* CSS untuk gambar latar belakang di perangkat seluler */
+@media (max-width: 767px) {
+    .gambar{
+        width: 40vh;
+    }
+    .text-s2{
+        font-size: smaller;
+    }
+    .gambar-blob{
+        width: 20vh;
+    }
+    .text-s3{
+        font-size: medium;
+    }
+    .g-carousel{
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+}
+
+/* CSS untuk gambar latar belakang di perangkat desktop */
+@media (min-width: 768px){
+    .gambar{
+        width: 40vh;
+    }  
+    .gambar-blob{
+        width: 25vh;
+    }  
+    .g-carousel{
+        max-height: 70vh;
+        min-height: 70vh;
+    }
+}
+
+.paris{
+    font-family: 'Parisienne', cursive;
+    /* font-size: 1em; */
+    /* color: #9A3B3B; */
+}
+
+.benne{
+    font-family: 'Benne', serif;
+    /* color: #9A3B3B; */
+}
+
+.amiri{
+    font-family: 'Amiri', serif;
+}
+
+.custom-border{
+    border-image: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(152,107,0,1) 97%);
+    border-image-slice: 1;
+}
+
+.custom-border2{
+    border-image: linear-gradient(270deg, rgba(232,232,232,1) 0%, rgba(152,107,0,1) 97%);
+    border-image-slice: 1;
+}
+
+.img-5{
+    height: 50vh;
+}
