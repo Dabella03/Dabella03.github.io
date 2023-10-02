@@ -50,7 +50,7 @@
     }
 .bg-2{
     /* background: rgba(151, 132, 132, 0.6); */
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.7)),url('../image/FotoPrewed2.png');
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.2)),url('../image/FotoPrewed2.png');
     background-size: cover;
     background-repeat: no-repeat;
 .mobile-image {
@@ -121,11 +121,11 @@ display: none;
   }
 
   .wave-container3 {  
-    height: 50vh;
+    height: 60vh;
     background-color: #ffffff;
     background-image:url('../image/wave.svg'),url('../image/wave\ \(3\).svg'),url('../image/wave\ \(8\).svg');
     position: relative;
-    top:-10%;
+    top:4%;
     background-repeat: no-repeat;
   }
 
