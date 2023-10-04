@@ -20,7 +20,7 @@
             <h1 class="text-danger">Roffi</h1>
         </div>
         <h5 class="text-white song-myung">5. 10. 23</h5>
-        <a href="#section2" onclick="playAudio('./components/image/music.mp3')">
+        <a href="#section2" onload="disableScroll()" onclick="enableScroll()">
             <button type= "button" class="btn btn-danger btn-lg rounded-5 " >
                 <i class="bi bi-envelope-paper-heart"></i>&nbspOpen Invitation
             </button>
@@ -28,13 +28,13 @@
         
     </section>
 
-    <section id="section2" class="d-flex flex-column justify-content-center align-items-center vh-100 wave-container">
-        <img src="./components/image/2-removebg-preview.png" alt="" class="gambar">
-        <p class="text-wrap text-center m-0 text-s2 benne color-2" style="width: 65%;">“Dan Di Antara Tanda-Tanda Kekuasaan-Nya Diciptakan-Nya Untukmu Pasangan Hidup Dari Jenismu Sendiri 
+    <section id="section2" class="d-flex flex-column  align-items-center vh-100 wave-container">
+        <img src="./components/image/2-removebg-preview.png" alt="" class="gambar my-4">
+        <h2 class="text-wrap text-center benne color-2 text-s3" style="width: 65%;">“Dan Di Antara Tanda-Tanda Kekuasaan-Nya Diciptakan-Nya Untukmu Pasangan Hidup Dari Jenismu Sendiri 
             Supaya Kamu Dapat Ketenangan Hati Dan Dijadikannya Kasih Sayang Di Antara Kamu. 
-            Sesungguhnya Yang Demikian Menjadi Tanda-Tanda Kebesaran-Nya Bagi Orang-Orang Yang Berpikir.”</p>
-        <p class="text-s2 benne color-2">- Q.S. Ar-Rum: 21 -</p>
-        <img src="./components/image/hold-hands.png" alt="" class="rounded-circle gambar">
+            Sesungguhnya Yang Demikian Menjadi Tanda-Tanda Kebesaran-Nya Bagi Orang-Orang Yang Berpikir.”</h2>
+        <h2 class="text-s3 benne color-2">- Q.S. Ar-Rum: 21 -</h2>
+        <!-- <img src="./components/image/hold-hands.png" alt="" class="rounded-circle gambar"> -->
     </section>
 
     <section id="section3" class="d-flex flex-column justify-content-center align-items-center vh-100 wave-container2">
@@ -101,8 +101,9 @@
     <section id="section4" class="d-flex flex-column justify-content-center align-items-center vh-100 bg-2">
         <img src="./components/image/Flower Atas.png" alt="" class="gambar">
         <!-- <div class="border border-warning h-75 w-75 border-1 p-2"> -->
-            <div class="border h-75 w-75 border-warning border-5 p-2">
-                <div class="border border-warning h-100 w-100 border-3 d-flex flex-column justify-content-center align-items-center">
+            <div class="h-75 w-75 border-right custom-border3 border-4 border-end border-top border-start border-bottom p-2">
+                <!-- <div class="bg-trans"> -->
+                <div class="border-right custom-border4 border-4 border-end border-top border-start border-bottom h-100 w-100 border-3 d-flex flex-column justify-content-center align-items-center">
                     <h1 class="paris color-3 fw-bold">Akad Nikah</h1>
                     <div class="d-flex justify-content-center align-content-center">
                         <h3 class="text-s2 px-3 py-3 mx-2 border-top border-bottom custom-border border-2 benne color-2 fw-bold">SABTU</h3>
@@ -127,6 +128,7 @@
                         <button type= "button" class="btn btn-danger bg-4 shadow rounded-5"><i class="bi bi-pin-map"></i> Lihat Lokasi</button>
                     </a>
                 </div>
+            <!-- </div> -->
             </div>    
         <!-- </div> -->
     </section>
@@ -153,21 +155,19 @@
 
     <section id="section6" class="d-flex flex-column justify-content-center bg-3">
         <div class="text-center m-2">
-            <h1 class="beau text-white m-2">RSVP</h1>
+            <h1 class="beau text-white m-4">RSVP</h1>
             <h4 class="song-myung text-white text-s2">Terima kasih atas Konfirmasi, Doa dan Harapan yang  telah diberikan! </h4>
         </div>
         <form id="form" class="w-75 align-self-center" method="POST" 
         action = "https://script.google.com/macros/s/AKfycbytpZ6usISdAQLYUpdcmw5REGoIb6jPnFQn1GDuKqoOEIoSVzxsap258b123XTH1UUyGQ/exec">      
             <!-- Text input -->
             <div class="form-outline mb-4">
-                <label class="form-label text-white song-myung" for="nama">Nama</label>
-                <input type="text" id="nama" name="nama" class="form-control" list="namas"/>
+                <input type="text" id="nama" name="nama" class="form-control" list="namas" placeholder="Tuliskan nama anda..."/>
             </div>
           
             <!-- Message input -->
             <div class="form-outline mb-4">
-                <label class="form-label text-white song-myung" for="ucapan">Ucapan</label>
-              <textarea class="form-control" id="ucapan" name="ucapan" rows="3" placeholder="Tuliskan sesuatu" list="ucapan"></textarea>
+              <textarea class="form-control" id="ucapan" name="ucapan" rows="3" placeholder="Tuliskan ucapan dan doa" list="ucapan"></textarea>
             </div>
 
             <fieldset class="form-group text-white song-myung small">
@@ -198,8 +198,8 @@
         </div>
           <div class="container w-75 border-top border-3 border-white pt-3 mb-3">
             <div class="row">
-                <div class="col-md-6 offset-md-3 bg-5 rounded-2 p-0">
-                    <h5 class="song-myung m-3">Ucapan & Doa</h5>
+                <div class="col-md-6 offset-md-3 bg-5 rounded-2 p-0 shadow">
+                    <h5 class="song-myung m-3 color-2">Ucapan & Doa</h5>
                     <div class="scrollable-list text-s2 border-top border-3 border-white p-3" id="dataList">
                         <!-- Daftar akan dipopulasikan di sini -->
                     </div>
@@ -243,10 +243,28 @@
         <h1 class="beau color-2 fw-bold">Rofi & Yossi</h1>
     </section>
     <section id="section9" class="d-flex flex-column justify-content-center align-items-center vh-100 bg-3 text-white song-myung">
-        <h1>Protokol Kesehatan</h1>
-        <div class="w-75 text-center mb-5">
+        <h1 class="mb-5">Protokol Kesehatan</h1>
+        <div class="w-75 text-center mb-2">
             <p class="text-wrap text-s2">Tanpa mengurangi rasa hormat, dikarenakan masih dalam masa pandemi Covid-19, dan demi mematuhi protokol kesehatan ditatanan hidup baru. Demi kenyamanan bersama, kami memohon agar para tamu undangan yang hadir berkenan menerapkan protokol kesehatan.</p>
         </div>
+        <!-- <div class="d-flex flex-wrap justify-content-between text-center m-3">
+            <div class="flex-column justify-content-center align-content-center m-3">
+                <img class="gambar-blob" src="../bootstrap/components/image/2 884802.png" alt="...">
+                <h5 class="text-s2">Cuci tangan</h5>
+            </div>
+            <div class="flex-column justify-content-center align-content-center m-3">
+                <img class="gambar-blob" src="../bootstrap/components/image/2 884803.png"  alt="...">
+                <h5 class="text-s2">Pakai Masker</h5>
+            </div>
+            <div class="flex-column justify-content-center align-content-center m-3">
+                <img class="gambar-blob" src="../bootstrap/components/image/4 30729.png" alt="...">
+                <h5 class="text-s2">Menjaga Jarak</h5>
+            </div>
+            <div class="flex-column justify-content-center align-content-center m-3">
+                <img class="gambar-blob" src="../bootstrap/components/image/4 30730.png"  alt="...">
+                <h5 class="text-s2">Memakai Handsanitizer</h5>
+            </div>
+        </div> -->
         <div class="d-flex flex-row justify-content-between text-center">
             <div class="flex-column justify-content-center align-content-center m-3">
                 <img class="gambar-blob" src="../bootstrap/components/image/2 884802.png" alt="...">
@@ -266,14 +284,22 @@
                 <img class="gambar-blob" src="../bootstrap/components/image/4 30730.png"  alt="...">
                 <h5 class="text-s2">Memakai Handsanitizer</h5>
             </div>
-            <!-- <div class="flex-column justify-content-center align-content-center">
-                <img class="gambar-blob" src="../bootstrap/components/image/4 30730.png"  alt="...">
-                <h5 >Memakai </h5>
-            </div> -->
+        </div>
+        <div class="text-center">
+            <!-- <img src="./components/image/1689477124495 4.png" alt="" class="img-footer"> -->
+            <p class="mt-4"><i class="bi bi-instagram"></i>&nbsp@siapa</p>
         </div>
         
         
     </section>
+    <div id="audio-container">
+        <audio id="song" autoplay loop>
+            <source src="./components/image/music.mp3" type="audio/mp3">
+        </audio>
+        <div class="audio-icon-wrapper" style="display: none;">
+            <i class="bi bi-disc"></i>
+        </div>
+    </div>
 
 <!-- tooltip -->
     <script>
@@ -383,12 +409,12 @@
                 const listItem = document.createElement('div');
                 listItem.classList.add('mb-2'); // Menambahkan margin antara item
                 const listItemContent = `
-                    <div class="card ">
-                        <div class="card-body d-flex flex-row">
-                            <h1><i class="bi bi-person-circle"></i></h1>
-                            <div class="small">
-                                <h5 >${item.nama}</h5>
-                                <p >${item.ucapan}</p>
+                    <div class="card m-3">
+                        <div class="d-flex flex-row bg-5">
+                            <h1 class="mx-2"><i class="bi bi-person-circle"></i></h1>
+                            <div class="pt-2 px-4 bg-white w-100 rounded-2 shadow">
+                                <h5 class="text-s2">${item.nama}</h5>
+                                <p class="text-s2">${item.ucapan}</p>
                             </div>
                         </div>
                     </div>
@@ -435,7 +461,59 @@
   });
 });
     </script>
+<!-- disable scroll -->
+<script>
+    const rootElement = document.querySelector(":root");
+    const audioIconWrapper = document.querySelector(".audio-icon-wrapper")
+    const song=document.querySelector('#song');
+    const audioIcon =document.querySelector('.audio-icon-wrapper i');
+    let isPlaying=false;
 
+    function disableScroll(){
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+
+        window.onscroll =function(){
+            window.scrollTo(scrollTop, scrollLeft);
+        }
+        rootElement.style.scrollBehaviour='auto';
+    }
+    function enableScroll(){
+        window.onscroll=function(){}
+        rootElement.style.scrollBehaviour ='smooth'
+        // window.scrollTo(document.querySelector("#section2"))
+        playAudio();
+        isPlaying=true;
+    }
+    function playAudio(){
+        
+        song.volume = 0.3;
+        audioIconWrapper.style.display='flex';
+        song.play()
+    }
+    audioIconWrapper.onclick= function(){
+        if(isPlaying){
+            song.pause();
+            audioIcon.classList.remove('bi-disc');
+            audioIcon.classList.add('bi-pause-circle');
+        }else{
+            song.play();
+            audioIcon.classList.add('bi-disc');
+            audioIcon.classList.remove('bi-pause-circle');
+        }
+        isPlaying= !isPlaying;
+    }
+    disableScroll();
+</script>
+
+<!-- ambil query -->
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama=urlParams.get('n') || '';
+    console.log(nama)
+
+
+</script>
 </body>
 
 </html>

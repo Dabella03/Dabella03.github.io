@@ -137,7 +137,7 @@ display: none;
         font-size: smaller;
     }
     .gambar-blob{
-        width: 20vh;
+        width: 18vh;
     }
     .text-s3{
         font-size: medium;
@@ -148,6 +148,9 @@ display: none;
     }
     .bri{
         width: 15vh;
+    }
+    .img-footer{
+        width: 100vw;
     }
 
 }
@@ -163,6 +166,10 @@ display: none;
     .g-carousel{
         max-height: 70vh;
         min-height: 70vh;
+    }
+    .img-footer{
+        width: 70vh;
+        margin-top: 20%;
     }
 }
 
@@ -203,6 +210,17 @@ display: none;
     border-image-slice: 1;
 }
 
+.custom-border3{
+    border-image: linear-gradient(90deg, #AE8625 0%, #E0AA3E 97%);
+    border-image-slice: 1;
+}
+
+.custom-border4{
+    border-image: linear-gradient(270deg, #AE8625 0%, #E0AA3E 97%);
+    border-image-slice: 1;
+
+}
+
 .img-5{
     height: 50vh;
 }
@@ -221,4 +239,32 @@ display: none;
 
 .card {
     margin-bottom: 10px; /* Jarak antara item dalam daftar */
+}
+
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(1turn);
+    }
 }
