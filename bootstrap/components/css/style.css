@@ -19,6 +19,9 @@
 .color-5{
     color:#CC7C50
 }
+.color-6{
+    color: #F2E5D2;
+}
 
 .bg-btn-salin{
     background-color: #7FD575;
@@ -38,8 +41,8 @@
 @media (min-width: 768px){
 .bg-1{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0) ),url('../image/BgDesktop.png');
-    /* background-size: cover;
-    background-repeat: no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-2{
@@ -55,7 +58,13 @@
     .desktop-image {
     display: block;
     } 
+    #section1 h1, #locked h1{
+        font-size: 5vw;
+        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+        0px -4px 10px rgba(255,255,255,0.3);
+        }
 }
+
 
 /* CSS untuk gambar latar belakang di perangkat seluler */
 @media (max-width: 767px) {
@@ -64,20 +73,28 @@
         background-size: cover;
     background-repeat: no-repeat;
     }
-.bg-2{
-    /* background: rgba(151, 132, 132, 0.6); */
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.5)),url('../image/FotoPrewed2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-.mobile-image {
-display: block;
+    .bg-2{
+        /* background: rgba(151, 132, 132, 0.6); */
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.5)),url('../image/FotoPrewed2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mobile-image {
+    display: block;
+    }
+
+    .desktop-image {
+    display: none;
+    }    
+    
+    #section1 h1, #locked h1{
+    font-size: 15vw;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+    }
+    
 }
 
-.desktop-image {
-display: none;
-}    
-}    
-}
 
 
 
