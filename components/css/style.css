@@ -29,7 +29,7 @@
 }
 
 .bg-5{
-    background-color: #EDD8C7;
+    background-color: #faf0e1;
 }
 .bg-3{
     background-color: #C08261;
@@ -63,7 +63,14 @@
         text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
         0px -4px 10px rgba(255,255,255,0.3);
         }
+    #section2{
+        height: 100vh;
+    }
+    #section3 h5{
+        font-size: 2rem;
+    }
 }
+
 
 
 /* CSS untuk gambar latar belakang di perangkat seluler */
@@ -91,6 +98,12 @@
     font-size: 15vw;
     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
     0px -4px 10px rgba(255,255,255,0.3);
+    }
+    #section2{
+        height: 75vh;
+    }
+    #section3 h5{
+        font-size: 5vw;
     }
     
 }
@@ -121,7 +134,7 @@
   .wave-container2 {  
     height: 50vh;
     background-color: #ffffff;
-    background-image:url('../image/wave\ \(8\).svg'),url('../image/wave.svg'),url('../image/wave\ \(3\).svg');
+    background-image:url('../image/Vector\ \(1\).svg'),url('../image/wave.svg'),url('../image/Vector.svg');
     position: relative;
     top:-10%;
     background-repeat: no-repeat;
