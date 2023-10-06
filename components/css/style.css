@@ -124,7 +124,7 @@
   .wave-container {  
     height: 50vh;
     background-color: #ffffff;
-    background-image: url('../image/wave\ \(6\).svg'),url('../image/wave\ \(7\).svg'),url('../image/wave\ \(4\).svg');
+    background-image: url('../image/Wave\ 2.svg'),url('../image/wave\ \(7\).svg'),url('../image/wave\ \(4\).svg');
     /* position: absolute; */
     bottom: -0.3%;
     background-position: bottom;
@@ -134,7 +134,7 @@
   .wave-container2 {  
     height: 50vh;
     background-color: #ffffff;
-    background-image:url('../image/Vector\ \(1\).svg'),url('../image/wave.svg'),url('../image/Vector.svg');
+    background-image:url('../image/Wave\ Light\ 2.svg'),url('../image/Wave\ Medium\ 1.svg'),url('../image/Wave\ Maroon\ \(Fix\ 2\).svg');
     position: relative;
     top:-10%;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@
         font-size: smaller;
     }
     .gambar-blob{
-        width: 18vh;
+        width: 16vh;
     }
     .text-s3{
         font-size: medium;
@@ -191,7 +191,7 @@
         width: 40vh;
     }  
     .gambar-blob, .bri{
-        width: 25vh;
+        width: 20vh;
     }  
     .g-carousel{
         max-height: 70vh;
@@ -200,6 +200,12 @@
     .img-footer{
         width: 70vh;
         margin-top: 20%;
+    }
+    #bunga{
+        display: none;
+    }
+    #pembuka{
+        padding-top: 18vh
     }
 }
 
